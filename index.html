@@ -19,11 +19,11 @@
         </div>
         <div class="flex space-x-4 p-3">
             <div class="flex items-center space-x-2 h-[40px] w-[123px] bg-green-50 px-[35.5px] py-[14px] rounded-3xl">
-                <span>0</span>
+                <span id="navheart">0</span>
                 <img class="h-[30px] w-[30px]" src="./assets/heart.png" alt="">
             </div>
             <div class="flex items-center space-x-2 h-[40px] w-[123px] bg-green-50 px-[35.5px] py-[14px] rounded-3xl">
-                <span>100</span>
+                <span id="navestar">100</span>
                 <img class="h-[23.5px] w-[23.5px]" src="./assets/coin.png" alt="">
             </div>
                 <button class="flex justify-between items-center h-[40px] w-[123px] px-[35.5px] py-[14px] bg-[#00A63E] rounded-3xl text-white"><span id="navberCopy">2 </span>Copy</button>
@@ -38,7 +38,7 @@
         <div class="rounded-2xl bg-white shadow-2xl py-[32px] px-[32px] ">
             <div class="flex justify-between items-center mt-[16px]">
                 <img class="h-10 w-10" src="./assets/emergency.png" alt="">
-                <i class="heart-btn fa-regular fa-heart"></i>
+                <i class="save-btn fa-regular fa-heart"></i>
             </div>
             <h3 class="font-bold mt-[16px]">National Emergency Number</h3>
             <p class="text-gray-400">National Emergency</p>
@@ -58,7 +58,7 @@
         <div class="rounded-2xl bg-white shadow-2xl py-[32px] px-[32px] ">
             <div class="flex justify-between items-center mt-[16px]">
                 <img class="h-10 w-10" src="./assets/police.png" alt="">
-                <i class="heart-btn fa-regular fa-heart"></i>
+                <i class="save-btn fa-regular fa-heart"></i>
             </div>
             <h3 class="font-bold mt-[16px]">Police Helpline Number</h3>
             <p class="text-gray-400">Police</p>
@@ -78,7 +78,7 @@
         <div class="rounded-2xl bg-white shadow-2xl py-[32px] px-[32px] ">
             <div class="flex justify-between items-center mt-[16px]">
                 <img class="h-10 w-10" src="./assets/fire-service.png" alt="">
-                <i class="heart-btn fa-regular fa-heart"></i>
+                <i class="save-btn fa-regular fa-heart"></i>
             </div>
             <h3 class="font-bold mt-[16px]">Fire Service Number</h3>
             <p class="text-gray-400">Fire Service</p>
@@ -95,15 +95,17 @@
               </button>
             </div>
         </div>
-         <div class="flex justify-between items-start it rounded-2xl bg-white shadow-2xl py-[32px] px-[32px] row-span-3 ">
-            <h4 class="flex items-center space-x-2"><i class="fa-regular fa-clock"></i><span>Call History</span></h4>
+        <div class="rounded-2xl bg-white shadow-2xl py-[32px] px-[32px] row-span-3">
+            <div class="flex justify-between items-center mb-4">
+             <h4 class="flex items-center space-x-2 font-bold"><i class="fa-regular fa-clock"></i><span>Call History</span></h4>
              <button id="clearHistory" class="bg-[#00A63E] px-6 py-1 rounded-3xl text-white">Clear</button>
-             <ul id="historyList" class="mt-4 space-y-2 text-sm text-gray-600"></ul>
+            </div>
+              <ul id="historyList" class="space-y-2"></ul>
         </div>
         <div class="rounded-2xl bg-white shadow-2xl py-[32px] px-[32px] ">
             <div class="flex justify-between items-center mt-[16px]">
                 <img class="h-10 w-10" src="./assets/ambulance.png" alt="">
-                <i class="heart-btn fa-regular fa-heart"></i>
+                <i class="save-btn fa-regular fa-heart"></i>
             </div>
             <h3 class="font-bold mt-[16px]">Ambulance Service</h3>
             <p class="text-gray-400">Ambulance</p>
@@ -123,7 +125,7 @@
         <div class="rounded-2xl bg-white shadow-2xl py-[32px] px-[32px] ">
             <div class="flex justify-between items-center mt-[16px]">
                 <img class="h-10 w-10" src="./assets/emergency.png" alt="">
-                <i class="heart-btn fa-regular fa-heart"></i>
+                <i class="save-btn fa-regular fa-heart"></i>
             </div>
             <h3 class="font-bold mt-[16px]">Women & Child Helpline</h3>
             <p class="text-gray-400">Women & Child Helpline</p>
@@ -143,7 +145,7 @@
         <div class="rounded-2xl bg-white shadow-2xl py-[32px] px-[32px] ">
             <div class="flex justify-between items-center mt-[16px]">
                 <img class="h-10 w-10" src="./assets/emergency.png" alt="">
-                <i class="heart-btn fa-regular fa-heart"></i>
+                <i class="save-btn fa-regular fa-heart"></i>
             </div>
             <h3 class="font-bold mt-[16px]">Anti-Corruption Helpline</h3>
             <p class="text-gray-400">Anti-Corruption</p>
@@ -163,7 +165,7 @@
         <div class="rounded-2xl bg-white shadow-2xl py-[32px] px-[32px] ">
             <div class="flex justify-between items-center mt-[16px]">
                 <img class="h-10 w-10" src="./assets/emergency.png" alt="">
-                <i class="heart-btn fa-regular fa-heart"></i>
+                <i class="save-btn fa-regular fa-heart"></i>
             </div>
             <h3 class="font-bold mt-[16px]">Electricity Helpline</h3>
             <p class="text-gray-400">Electricity Outage</p>
@@ -183,7 +185,7 @@
         <div class="rounded-2xl bg-white shadow-2xl py-[32px] px-[32px] ">
             <div class="flex justify-between items-center mt-[16px]">
                 <img class="h-10 w-10" src="./assets/emergency.png" alt="">
-                <i class="heart-btn fa-regular fa-heart"></i>
+                <i class="save-btn fa-regular fa-heart"></i>
             </div>
             <h3 class="font-bold mt-[16px]">Brac Helpline</h3>
             <p class="text-gray-400">Brac</p>
@@ -203,7 +205,7 @@
         <div class="rounded-2xl bg-white shadow-2xl py-[32px] px-[32px] ">
             <div class="flex justify-between items-center mt-[16px]">
                 <img class="h-10 w-10" src="./assets/emergency.png" alt="">
-                <i class="heart-btn fa-regular fa-heart"></i>
+                <i class="save-btn fa-regular fa-heart"></i>
             </div>
             <h3 class="font-bold mt-[16px]">Bangladesh Railway Helpline </h3>
             <p class="text-gray-400">Bangladesh Railway</p>
